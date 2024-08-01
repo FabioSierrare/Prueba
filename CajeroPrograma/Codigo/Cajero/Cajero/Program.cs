@@ -39,7 +39,8 @@ namespace Cajero
 
             Console.WriteLine("Digite el numero de cuentas");
             int nverificar = int.Parse(Console.ReadLine());
-
+            
+            
             int x = 0;
             while (x == 5)
             {
@@ -48,6 +49,16 @@ namespace Cajero
 
                 switch (op)
                 {
+                    case 1: 
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4:
+                        break;
+                    case 5:
+                        break;
 
                 }
             }
