@@ -37,7 +37,7 @@ namespace Cajero
             cuentas[2, 1] = 4321;
             cuentas[2, 2] = 200;
 
-            Console.WriteLine("Digite el numero de cuenta");
+            Console.WriteLine("Digite el numero de cuentas");
             int nverificar = int.Parse(Console.ReadLine());
 
             int x = 0;
