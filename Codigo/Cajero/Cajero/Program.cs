@@ -44,7 +44,7 @@ namespace Cajero
             int x = 0;
             while (x == 5)
             {
-                Console.WriteLine("Digite la opcion");
+                Console.WriteLine("Digite la opciones");
                 int op = int.Parse(Console.ReadLine());
 
                 switch (op)
