@@ -5,3 +5,10 @@ C:\Users\Fasire\Desktop\CajeroPrograma\Codigo\Cajero\Cajero\obj\Debug\Cajero.csp
 C:\Users\Fasire\Desktop\CajeroPrograma\Codigo\Cajero\Cajero\obj\Debug\Cajero.csproj.CoreCompileInputs.cache
 C:\Users\Fasire\Desktop\CajeroPrograma\Codigo\Cajero\Cajero\obj\Debug\Cajero.exe
 C:\Users\Fasire\Desktop\CajeroPrograma\Codigo\Cajero\Cajero\obj\Debug\Cajero.pdb
+C:\Users\APRENDIZ\Documents\CajeroPrograma\Codigo\Cajero\Cajero\bin\Debug\Cajero.exe.config
+C:\Users\APRENDIZ\Documents\CajeroPrograma\Codigo\Cajero\Cajero\bin\Debug\Cajero.exe
+C:\Users\APRENDIZ\Documents\CajeroPrograma\Codigo\Cajero\Cajero\bin\Debug\Cajero.pdb
+C:\Users\APRENDIZ\Documents\CajeroPrograma\Codigo\Cajero\Cajero\obj\Debug\Cajero.csproj.AssemblyReference.cache
+C:\Users\APRENDIZ\Documents\CajeroPrograma\Codigo\Cajero\Cajero\obj\Debug\Cajero.csproj.CoreCompileInputs.cache
+C:\Users\APRENDIZ\Documents\CajeroPrograma\Codigo\Cajero\Cajero\obj\Debug\Cajero.exe
+C:\Users\APRENDIZ\Documents\CajeroPrograma\Codigo\Cajero\Cajero\obj\Debug\Cajero.pdb
