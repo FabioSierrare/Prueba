@@ -34,6 +34,8 @@ namespace Cajero
             int b = 0;
             while(b != -1)
             {
+                b = 1;
+                Console.Clear();
 
                 Console.WriteLine("Digite el numero de cuentas");
                 int cverificar = int.Parse(Console.ReadLine());
@@ -81,11 +83,15 @@ namespace Cajero
                                         break;
 
                                 }
+                                b = 1;
                             }
                         }
                     }
                 }
-                Console.WriteLine("Cuenta no iniciada");
+                if(b == 0)
+                {
+                    Console.WriteLine("Cuenta no iniciada");
+                }
                 Console.ReadKey();
             }
 
