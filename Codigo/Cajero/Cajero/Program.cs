@@ -31,14 +31,15 @@ namespace Cajero
             ObjCuenta[2].pin = 4321;
             ObjCuenta[2].saldo = 452;
 
-
+            Console.WriteLine(ObjCuenta.Count);
 
             Console.WriteLine("Digite el numero de cuentas");
             int cverificar = int.Parse(Console.ReadLine());
 
+            
 
             int x = 0;
-            while (x == 5)
+            while (x != 5)
             {
                 Console.WriteLine("Digite la opciones n");
                 int op = int.Parse(Console.ReadLine());
@@ -63,7 +64,7 @@ namespace Cajero
         }
     }
 
-    public class Cuentas
+    public class Cuentas: retiro
     {
         public int NumeroCuenta{get; set;}
         public int pin { get; set;}
