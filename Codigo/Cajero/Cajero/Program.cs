@@ -9,33 +9,29 @@ namespace Cajero
     internal class Program
     {
 
-        static int VerificarCuenta(int cuentav, int[,] cuentas)
-        {
-            for (int i = 0; i < cuentas.GetLength(0); i++)
-            {
-                if (cuentas[i, 0] == cuentav)
-                {
-                    return i;
-                }
-            }
-            return -1;
-        }
+        
+        
         static void Main(string[] args)
         {
-            int[,] cuentas = new int[3, 3];
+            List<Cuentas> ObjCuenta = new List<Cuentas>();
 
-            cuentas[0, 0] = 1000;
-            cuentas[0, 1] = 1234;
-            cuentas[0, 2] = 50;
-
-            cuentas[1, 0] = 1001;
-            cuentas[1, 1] = 0000;
-            cuentas[1, 2] = 320;
+            ObjCuenta.Add(new Cuentas());
+            ObjCuenta[0].NumeroCuenta = 1000;
+            ObjCuenta[0].pin = 1234;
+            ObjCuenta[0].saldo = 200;
 
 
-            cuentas[2, 0] = 1002;
-            cuentas[2, 1] = 4321;
-            cuentas[2, 2] = 200;
+            ObjCuenta.Add(new Cuentas());
+            ObjCuenta[1].NumeroCuenta = 1001;
+            ObjCuenta[1].pin = 0000;
+            ObjCuenta[1].saldo = 1200;
+
+            ObjCuenta.Add(new Cuentas());
+            ObjCuenta[2].NumeroCuenta = 1002;
+            ObjCuenta[2].pin = 4321;
+            ObjCuenta[2].saldo = 452;
+
+
 
             Console.WriteLine("Digite el numero de cuentas");
             int nverificar = int.Parse(Console.ReadLine());
@@ -65,5 +61,12 @@ namespace Cajero
 
 
         }
+    }
+
+    public class Cuentas
+    {
+        public int NumeroCuenta{get; set;}
+        public int pin { get; set;}
+        public double saldo { get; set;}
     }
 }
