@@ -34,7 +34,7 @@ namespace Cajero
 
 
             Console.WriteLine("Digite el numero de cuentas");
-            int nverificar = int.Parse(Console.ReadLine());
+            int cverificar = int.Parse(Console.ReadLine());
 
 
             int x = 0;
