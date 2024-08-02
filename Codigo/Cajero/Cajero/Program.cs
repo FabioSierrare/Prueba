@@ -31,34 +31,66 @@ namespace Cajero
             ObjCuenta[2].pin = 4321;
             ObjCuenta[2].saldo = 452;
 
-            Console.WriteLine(ObjCuenta.Count);
-
-            Console.WriteLine("Digite el numero de cuentas");
-            int cverificar = int.Parse(Console.ReadLine());
-
-            
-
-            int x = 0;
-            while (x != 5)
+            int b = 0;
+            while(b != -1)
             {
-                Console.WriteLine("Digite la opciones n");
-                int op = int.Parse(Console.ReadLine());
 
-                switch (op)
+                Console.WriteLine("Digite el numero de cuentas");
+                int cverificar = int.Parse(Console.ReadLine());
+
+                for (int i = 0; i < ObjCuenta.Count; i++)
                 {
-                    case 1:
-                        break;
-                    case 2:
-                        break;
-                    case 3:
-                        break;
-                    case 4:
-                        break;
-                    case 5:
-                        break;
+                    if (ObjCuenta[i].NumeroCuenta == cverificar)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Digite Pin");
+                        int pin = int.Parse(Console.ReadLine());
 
+
+                        while (ObjCuenta[i].pin != pin && pin != 0)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("Pin incorrecto vuelva a digitarlo o escriba 0 para salir");
+                            pin = int.Parse(Console.ReadLine());
+                            Console.WriteLine(ObjCuenta.Count);
+                        }
+
+                        if (pin == ObjCuenta[i].pin)
+                        {
+                            int x = 0;
+                            while (x != 5)
+                            {
+                                Console.WriteLine("Digite la opciones n");
+                                int op = int.Parse(Console.ReadLine());
+
+                                switch (op)
+                                {
+                                    case 1:
+                                        Console.WriteLine("Digite la cantidad a retirar");
+                                        double cantidad = double.Parse(Console.ReadLine());
+
+                                        ObjCuenta[i].retirar(ObjCuenta[i], cantidad);
+                                        break;
+                                    case 2:
+                                        break;
+                                    case 3:
+                                        break;
+                                    case 4:
+                                        break;
+                                    case 5:
+                                        break;
+
+                                }
+                            }
+                        }
+                    }
                 }
+                Console.WriteLine("Cuenta no iniciada");
+                Console.ReadKey();
             }
+
+
+
 
 
         }

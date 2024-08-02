@@ -9,10 +9,10 @@ namespace Cajero
 {
     public class retiro
     {
-        public Cuentas retirar(Cuentas cuenta, double cantidad)
+        public void retirar(Cuentas cuenta, double cantidad)
         {
             DateTime fecha = DateTime.Now;
-            if (cantidad <= cuenta.saldo && cantidad >= 10000 && cantidad <= 2400000)
+            if (cantidad <= cuenta.saldo && cantidad >= 10 && cantidad <= 2400000)
             {
                 //Hago que el texto se guarde en un documento de texto sin borrar los datos ya escritos
                 using (StreamWriter fact = new StreamWriter("C:\\Users\\Fasire\\Desktop\\Factura.txt", true))
@@ -42,14 +42,14 @@ namespace Cajero
                 using (StreamWriter fact = new StreamWriter("C:\\Users\\Fasire\\Desktop\\Factura.txt", true))
                 {
                     //cantidad se menor a 10.000
-                    if (cantidad < 10000)
+                    if (cantidad < 10)
                     {
                         fact.WriteLine("--------------------------------------------------");
                         fact.WriteLine("Factura - CUENTA: {0}", cuenta.NumeroCuenta);
                         fact.WriteLine("--------------------------------------------------");
                         fact.WriteLine("|Fecha y hora: {0}", fecha);
                         fact.WriteLine("--------------------------------------------------");
-                        fact.WriteLine("|El minimo de cantidad es de $10.000");
+                        fact.WriteLine("|El minimo de cantidad es de $10");
                         fact.WriteLine("--------------------------------------------------");
                         fact.WriteLine("");
                         fact.WriteLine("");
@@ -85,7 +85,6 @@ namespace Cajero
                 }
             }
 
-            return cuenta;
         }
     }
 }
